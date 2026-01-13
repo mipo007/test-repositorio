@@ -1,0 +1,15 @@
+name: Mi Primera Prueba Manual
+
+# Esto define el "detonante".
+# workflow_dispatch significa: "Ponme un botón para darle yo manualmente"
+on: workflow_dispatch:
+
+jobs:
+  prueba-rapida:
+    runs-on: ubuntu-latest  # Usamos un ordenador Linux de GitHub
+    steps:
+      - name: Paso 1 - Saludar
+        run: echo "¡Hola! Soy el servidor de GitHub y estoy vivo."
+      
+      - name: Paso 2 - Ejecutar algo de Python simple
+        run: python -c "print('Si lees esto, Python funciona correctamente en la nube')"
