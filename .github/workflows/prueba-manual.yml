@@ -2,7 +2,8 @@ name: Mi Primera Prueba Manual
 
 # Esto define el "detonante".
 # workflow_dispatch significa: "Ponme un botón para darle yo manualmente"
-on: workflow_dispatch:
+on: 
+  workflow_dispatch:
 
 jobs:
   prueba-rapida:
